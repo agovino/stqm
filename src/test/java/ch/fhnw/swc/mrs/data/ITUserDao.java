@@ -43,7 +43,7 @@ public class ITUserDao extends DBTestCase {
     private Connection connection;
 
     private static final String COUNT_SQL = "SELECT COUNT(*) FROM clients";
-    private static final String DB_CONNECTION = "jdbc:hsqldb:mem:mrs";
+    private static final String DB_CONNECTION = "jdbc:hsqldb:file:testdb";
 
 	/** Create a new Integration Test object. */
 	public ITUserDao() {
