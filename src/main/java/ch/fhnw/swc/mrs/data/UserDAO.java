@@ -19,6 +19,7 @@ public interface UserDAO extends DAO {
      * Retrieve all users stored in this system.
      * @return a list of all users.
      */
+    // 
     List<User> getAll();
 
     /**
@@ -35,10 +36,15 @@ public interface UserDAO extends DAO {
     void delete(User user);
 
     /**
-     * Retrieve a user by his/her name. Use the family name to retrieve a list of all users with that name.
+     * Retrieve a user by his/her name. Use the family name to retrieve a list of all users with that (same) name.
      * Note this method does not support wildcards!
      * @param name the family name of the users to retrieve.
      * @return a list of users with the given name.
      */
-    List<User> getByName(String name);
+    List<User> getByName(String name); 
+    // Im Rentmovie-Tab ein Name suchen ?!
+    // Auf ServerSeite suchen und nur die gesuchten Namen über 
+    // das Internet zurückgeben
+    // Zusätzlich hat auf DB-Seite der Name einen Index -> daher viel schneller durchsucht
+    
 }
