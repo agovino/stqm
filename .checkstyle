@@ -4,10 +4,10 @@
   <local-check-config name="SWC Checks" location="src/main/config/swc_checks.xml" type="project" description="">
     <additional-data name="protect-config-file" value="false"/>
   </local-check-config>
-  <local-check-config name="maven-checkstyle-plugin validate" location="file:/C:/Users/ago/Dropbox/Public/icompetence/Semester%2007/07%20stqm/stqm%202017/eclipse_project/mrs_stqm/src/main/config/swc_checks.xml" type="remote" description="maven-checkstyle-plugin configuration validate">
+  <local-check-config name="maven-checkstyle-plugin validate" location="file:/C:/Users/bell/Dropbox/Public/icompetence/Semester%2007/07%20stqm/stqm%202017/eclipse_project/mrs_stqm/src/main/config/swc_checks.xml" type="remote" description="maven-checkstyle-plugin configuration validate">
     <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
-    <property name="checkstyle.suppressions.file" value="C:\Users\ago\Dropbox\Public\icompetence\Semester 07\07 stqm\stqm 2017\eclipse_project\.metadata\.plugins\org.eclipse.core.resources\.projects\mrs_stqm\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-suppressions-validate.xml"/>
-    <property name="checkstyle.header.file" value="C:\Users\ago\Dropbox\Public\icompetence\Semester 07\07 stqm\stqm 2017\eclipse_project\.metadata\.plugins\org.eclipse.core.resources\.projects\mrs_stqm\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-validate.txt"/>
+    <property name="checkstyle.suppressions.file" value="C:\Users\bell\Dropbox\Public\icompetence\Semester 07\07 stqm\stqm 2017\eclipse_project\.metadata\.plugins\org.eclipse.core.resources\.projects\mrs_stqm\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-suppressions-validate.xml"/>
+    <property name="checkstyle.header.file" value="C:\Users\bell\Dropbox\Public\icompetence\Semester 07\07 stqm\stqm 2017\eclipse_project\.metadata\.plugins\org.eclipse.core.resources\.projects\mrs_stqm\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-validate.txt"/>
   </local-check-config>
   <fileset name="java-sources-validate" enabled="true" check-config-name="maven-checkstyle-plugin validate" local="true">
     <file-match-pattern match-pattern="^src/main/java/.*\.java" include-pattern="true"/>
