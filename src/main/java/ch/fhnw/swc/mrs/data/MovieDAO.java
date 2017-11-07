@@ -3,7 +3,6 @@ package ch.fhnw.swc.mrs.data;
 import java.util.List;
 
 import ch.fhnw.swc.mrs.model.Movie;
-import ch.fhnw.swc.mrs.model.User;
 
 /**
  * @author wolfgang.schwaiger

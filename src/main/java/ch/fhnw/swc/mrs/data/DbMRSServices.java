@@ -3,13 +3,14 @@ package ch.fhnw.swc.mrs.data;
 import java.sql.Connection;
 import java.util.List;
 
+import ch.fhnw.swc.mrs.model.Bill;
 import ch.fhnw.swc.mrs.model.MRSServices;
 import ch.fhnw.swc.mrs.model.Movie;
 import ch.fhnw.swc.mrs.model.Rental;
 import ch.fhnw.swc.mrs.model.User;
 
 public class DbMRSServices implements MRSServices {
-    private static final String DB_CONNECTION = "jdbc:hsqldb:file:C:/Users/ago/Dropbox/Public/icompetence/Semester 07/07 stqm/stqm 2017/Database/mrs_data/testdb";
+    private static final String DB_CONNECTION = "jdbc:hsqldb:mem:mrs";
 	private Database db;
 	
 	private MovieDAO getMovieDAO() { 
@@ -132,6 +133,8 @@ public class DbMRSServices implements MRSServices {
 	    try {
 	        getRentalDAO().save(r);
 	        m.setRented(true);
+	        Bill b = new Bill(u.getFirstName(), u.getName(), u.getRentals());
+	        System.out.println(b.print());
 	        getMovieDAO().saveOrUpdate(m);
 	    } catch (Exception e) {
 	        e.printStackTrace();
